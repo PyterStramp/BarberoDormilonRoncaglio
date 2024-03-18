@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!--- importando el css -->
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbero Dormilón</title>
+</head>
+<body>
+    <h1>Problema del Barbero Dormilón</h1>
+
+    <!-- Imagen del barbero trabajando -->
+    <div class="barbero">
+        <img id="barbero-img" src="./img/BarberoTrabajando.png" alt="Barbero dormido">
+        <p>Barbero</p>
+        
+    </div>
+
+
+
+    <!-- Imagen de las sillas de espera -->
+    <div class="fondo">
+        <p>Sillas de espera</p>
+        <div id="sillas">
+        </div>
+
+        
+        <p>clientes</p>
+        <div id="clientes">
+        </div>
+
+        
+
+    </div>
+
+    <div id="console" style="font-family: monospace; white-space: pre; height: 200px; overflow-y: scroll;"></div>
+    
+    <script type="module" src="./objetos/semaforo.js"></script>
+    <script type="module" src="./objetos/sillaEspera.js"></script>
+    <script type="module" src="./objetos/cliente.js"></script>
+    <script type="module" src="./objetos/barbero.js"></script>
+    <script type="module" src="./index.js"></script>
+
+</body>
+</html>

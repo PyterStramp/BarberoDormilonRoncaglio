@@ -1,0 +1,53 @@
+/* Estilo para el contenedor principal */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilo para los contenedores de imágenes y descripciones */
+div {
+    margin: 20px;
+}
+
+/* Estilo para las imágenes */
+img {
+    max-width: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para los párrafos de descripción */
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Efecto de escala al pasar el mouse sobre las imágenes */
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para la consola */
+#console {
+    font-family: monospace;
+    white-space: pre;
+    height: 200px;
+    overflow-y: scroll;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes del barbero */
+#barbero-img {
+    max-width: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}

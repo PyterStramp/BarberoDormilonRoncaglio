@@ -59,5 +59,6 @@ for (let i = 1; i <= numClientes; i++) {
     }
 }
 
+
 // Iniciar el barbero para atender clientes
 barbero.atenderClientes();

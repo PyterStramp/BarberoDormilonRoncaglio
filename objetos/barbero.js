@@ -9,10 +9,12 @@ export class Barbero {
 
     async cortarPelo(cliente) {
         console.log(`El barbero está cortando el pelo del Cliente ${cliente.id}`);
-        //this.renderizadoEstadoBarbero(`El barbero está cortando el pelo del Cliente ${cliente.id}`);
+        this.renderizadoEstadoBarbero(`El barbero está cortando el pelo del Cliente ${cliente.id}`);
         this.mostrarBarberoTrabajando();
         await new Promise((resolve) => setTimeout(resolve, 4000)); // Simulación de corte de pelo
         console.log(`El barbero ha terminado de cortar el pelo del Cliente ${cliente.id}`);
+        this.renderizadoEstadoBarbero(`El barbero ha terminado de cortar el pelo del Cliente ${cliente.id}`);
+        await new Promise((resolve) => setTimeout(resolve, 3000)); // Simulación de renderizado
         this.eliminarRenderizadoCliente(cliente.id);
         this.mostrarBarberoDormido();
         this.semaforo.signal();
@@ -47,8 +49,9 @@ export class Barbero {
     }
 
     renderizadoEstadoBarbero(mensaje) {
-        const referencia = document.getElementsByClassName('barbero');
-        const render = document.createElement('p').innerHTML=`${mensaje}`;
+
+        const render = document.getElementById('estadoBarbero');
+        render.innerText = `${mensaje}`;
         
         
     }
